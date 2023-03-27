@@ -22,7 +22,7 @@ public class WordManager : MonoBehaviour {
 	{
 		// Generate a random word using the WordGenerator class and spawn it using the WordSpawner script
 		Word word = new Word(WordGenerator.GetRandomWord(), wordSpawner.SpawnWord());
-		Debug.Log(word.word);
+		
 
 		// Add the new Word object to the list
 		words.Add(word);

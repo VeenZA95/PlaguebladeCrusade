@@ -7,6 +7,7 @@ public class PlayerDeath : MonoBehaviour
     public GameObject deathEffect;
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("Collision");
         // Check if the colliding object is an enemy
         if (collision.gameObject.CompareTag("Enemy"))
         {

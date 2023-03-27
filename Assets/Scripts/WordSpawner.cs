@@ -19,7 +19,7 @@ public class WordSpawner : MonoBehaviour
 		GameObject wordObj = Instantiate(wordPrefab, randomPosition, Quaternion.identity, wordCanvas);
 
 		WordDisplay wordDisplay = wordObj.GetComponent<WordDisplay>();
-		Debug.Log("Sprite randomiser called");
+		
 		wordObj.GetComponent<SpriteRenderer>().sprite = enemyManager.GetComponent<Enemy>().enemies[Random.Range(0, 2)];
 		BoxCollider2D collider = wordObj.AddComponent<BoxCollider2D>();
 		wordObj.tag = "Enemy";
